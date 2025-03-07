@@ -1,10 +1,26 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
     int n;
-    cin>>n;
-    for(int i=0;i<n;i++){
-        int ai;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
     }
-return 0;
+    int maxEle=0;
+    for (int i=0;i<n;i++)
+    {
+        if (arr[i]>maxEle)
+        {
+            maxEle=arr[i];
+        }
+    }
+    int ans=0;
+    for (int i=0;i<n;i++)
+    {
+        ans=ans+(maxEle-arr[i]);
+    }
+    cout<<ans<<"\n";
 }
