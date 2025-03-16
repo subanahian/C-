@@ -1,12 +1,20 @@
-#include <iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
-int main() {
-    long long A, B, C, D;
-    cin >> A >> B >> C >> D;
-    if (A * B > C * D)
-        cout << "YES" << "\n";
+
+int main()
+{
+    long long int a, b, c, d;
+    cin >> a >> b >> c >> d;
+
+    if ((b * log(a)) > (d * log(c)))
+    {
+        cout << "YES\n";
+    }
     else
-        cout << "NO" << "\n";
+    {
+        cout << "NO\n";
+    }
 
     return 0;
 }
