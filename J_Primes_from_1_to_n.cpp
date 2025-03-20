@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main() {
     int N;
@@ -12,7 +12,7 @@ int main() {
             }
         }
         if (Prime) {
-            cout << num << " ";
+            cout << num << " " << "\n";
         }
     }
     return 0;
