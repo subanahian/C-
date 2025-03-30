@@ -1,17 +1,19 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
-int main(){
-    int n;
-    int count = 0;
+int main() {
+    int n, count = 0;
     cin >> n;
-    while( n--){
-        int num1 , num2 , num3;
-        cin >> num1 >> num2 >> num3;
-        if(num1 + num2 +num3 >= 2){
+    
+    for (int i = 0; i < n; i++) {
+        int petya, vasya, tonya;
+        cin >> petya >> vasya >> tonya;
+        
+        // If at least two friends are sure (sum >= 2), implement the problem
+        if (petya + vasya + tonya >= 2) {
             count++;
         }
     }
- cout << count << "\n";
- return 0;
+    
+    cout << count << endl;
+    return 0;
 }
