@@ -9,7 +9,7 @@ int main() {
     }
     for (int i = 0; i < N; i++) {
         if (A[i] <= 10) {
-            cout << "A[" << i << "] = " << A[i] << "\n";
+            cout << "A[" << i << "] = " << A[i] << "";
         }
     }
     return 0;
