@@ -32,7 +32,7 @@ int main() {
         for (int j = 0; j < CB; j++) {
             cout << result[i][j] << " ";
         }
-        cout << endl;
+        cout << "\n";
     }
     return 0;
 }
