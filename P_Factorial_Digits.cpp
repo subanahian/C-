@@ -5,7 +5,7 @@ int main() {
     int N;
     cin >> N;
     if (N == 0 || N == 1) {
-        cout << "Number of digits of " << N << "! is 1" << endl;
+        cout << "Number of digits of " << N << "! is 1" << "\n";
         return 0;
     }
     int fact = 1;
