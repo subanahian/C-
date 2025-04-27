@@ -1,6 +1,5 @@
-#include <iostream>
+#include<bits/stdc++.h> 
 using namespace std;
-
 int main() {
     int N;
     cin >> N;
@@ -8,16 +7,10 @@ int main() {
         cout << "Number of digits of " << N << "! is 1" << "\n";
         return 0;
     }
-    int fact = 1;
+    double digits = 0;
     for (int i = 2; i <= N; i++) {
-        fact *= i;
+        digits += log10(i);
     }
-    int digits = 0;
-    int temp = fact;
-    while (temp > 0) {
-        digits++;
-        temp /= 10;
-    }
-    cout << "Number of digits of " << N << "! is " << digits << "\n";
+    cout << "Number of digits of " << N << "! is " << (int)digits + 1 << "\n";
     return 0;
 }
