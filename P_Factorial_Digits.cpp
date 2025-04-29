@@ -8,7 +8,7 @@ int main() {
         return 0;
     }
     double digits = 0;
-    for (int i = 2; i <= N; i++) {
+    for (int i = 2; i <= N; i++) {  
         digits += log10(i);
     }
     cout << "Number of digits of " << N << "! is " << (int)digits + 1 << "\n";
