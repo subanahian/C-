@@ -7,6 +7,6 @@ int main() {
     for (int i = L; i <= R; i++) {
         product = (product * i) % M;
     }
-    cout << product << endl;
+    cout << product << "\n";
     return 0;
 }
