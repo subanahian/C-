@@ -2,9 +2,11 @@
 using namespace std;
 
 int main() {
-    int x1, y1, x2, y2;
+    long long x1, y1, x2, y2;
     cin >> x1 >> y1 >> x2 >> y2;
-    double distance = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
-    cout << fixed << setprecision(9) << distance << "\n";
+    long long dx = x2 - x1;
+    long long dy = y2 - y1;
+    double distance = sqrt(dx * dx + dy * dy);
+    cout << fixed << setprecision(9) << distance << endl;
     return 0;
 }
