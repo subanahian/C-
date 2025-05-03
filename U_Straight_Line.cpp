@@ -10,8 +10,8 @@ int main() {
                      x3 * (y1 - y2);
 
     if (area == 0)
-        cout << "YES" << endl;
+        cout << "YES" << "\n";
     else
-        cout << "NO" << endl;
+        cout << "NO" << "\n";
     return 0;
 }
