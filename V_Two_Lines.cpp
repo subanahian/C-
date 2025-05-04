@@ -13,10 +13,9 @@ int main() {
     int cross = dx1 * dy2 - dx2 * dy1;
 
     if (cross == 0) {
-        cout << "YES" << endl; 
+        cout << "YES" <<"\n"; 
     } else {
-        cout << "NO" << endl;  
+        cout << "NO" <<"\n";
     }
-
     return 0;
 }
