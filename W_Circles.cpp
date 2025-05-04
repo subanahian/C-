@@ -15,9 +15,9 @@ int main() {
     double r2 = sqrt(pow(x3 - x4, 2) + pow(y3 - y4, 2)) / 2.0;
     double centerDistance = sqrt(pow(cx1 - cx2, 2) + pow(cy1 - cy2, 2));
     if (centerDistance <= (r1 + r2)) {
-        cout << "YES" << endl;  
+        cout << "YES" << "\n";  
     } else {
-        cout << "NO" << endl; 
+        cout << "NO" << "\n"; 
     }
 
     return 0;
