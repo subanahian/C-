@@ -1,10 +1,16 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std;
 
-int main(){
-    int a;
-    cin>>a;
-    for(int i =1 ; i<=5 ;i++){
-        cout<<i<<"\n";
-    }
+void printNumbers(int n) {
+    if (n == 0)
+        return;
+    printNumbers(n - 1);
+    cout << n << endl;
+}
+
+int main() {
+    int N;
+    cin >> N;
+    printNumbers(N);
+    return 0;
 }
