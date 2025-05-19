@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int findMax(int arr[], int n) {
@@ -23,7 +23,7 @@ int main() {
     }
 
     int maxValue = findMax(arr, N);  
-    cout << maxValue << endl;  
+    cout << maxValue << "\n";  
 
     return 0;
 }
