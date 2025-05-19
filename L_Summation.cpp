@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int sumArray(int arr[], int index) {
@@ -18,6 +18,6 @@ int main() {
         cin >> arr[i];
     }
     int result = sumArray(arr, N - 1);
-    cout << result << endl;
+    cout << result << "\n";
     return 0;
 }
