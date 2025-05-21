@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 const int MAX = 100000;
 int A[MAX]; 
@@ -13,6 +13,6 @@ int main() {
         cin >> A[i];
     }
     int result = sumLastM(N - 1, M);
-    cout << result << endl;
+    cout << result << "\n";
     return 0;
 }
