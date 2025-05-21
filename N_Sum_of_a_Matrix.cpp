@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 const int MAX = 100;
@@ -10,7 +10,7 @@ void addMatrices(int row, int col, int R, int C) {
     if (col + 1 < C)
         addMatrices(row, col + 1, R, C); 
     else
-        addMatrices(row + 1, 0, R, C); // move to next row
+        addMatrices(row + 1, 0, R, C); 
 }
 
 int main() {
