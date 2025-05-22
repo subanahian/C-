@@ -1,16 +1,14 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-// Recursive function to calculate the Nth Fibonacci number
 int fibonacci(int n) {
-    if (n == 1) return 0; // First Fibonacci number
-    if (n == 2) return 1; // Second Fibonacci number
-    return fibonacci(n - 1) + fibonacci(n - 2); // Recursive call
+    if (n == 1) return 0; 
+    if (n == 2) return 1; 
+    return fibonacci(n - 1) + fibonacci(n - 2); 
 }
-
 int main() {
     int N;
-    cin >> N;             // Input only
-    cout << fibonacci(N); // Output only
+    cin >> N;             
+    cout << fibonacci(N); 
     return 0;
 }
