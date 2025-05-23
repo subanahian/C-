@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 long long log2_floor(long long n) {
@@ -6,10 +6,9 @@ long long log2_floor(long long n) {
         return 0;
     return 1 + log2_floor(n / 2);
 }
-
 int main() {
     long long N;
     cin >> N;
-    cout << log2_floor(N) << endl;
+    cout << log2_floor(N) << "\n";
     return 0;
 }
