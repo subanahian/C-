@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int sequenceLength(int n) {
@@ -13,7 +13,7 @@ int sequenceLength(int n) {
 int main() {
     int n;
     cin >> n;
-    cout << sequenceLength(n) << endl;
+    cout << sequenceLength(n) << "\n";
 
     return 0;
 }
