@@ -1,5 +1,4 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 bool isPalindrome(const vector<int>& A, int start, int end) {
@@ -17,9 +16,9 @@ int main() {
         cin >> A[i];
     }
     if (isPalindrome(A, 0, N - 1)) {
-        cout << "YES" << endl;
+        cout << "YES" << "\n";
     } else {
-        cout << "NO" << endl;
+        cout << "NO" << "\n";
     }
 
     return 0;
