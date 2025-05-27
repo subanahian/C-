@@ -1,21 +1,23 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
-int findSum(int arr[], int n) {
-    if (n == 1) {
-        return arr[0];
+double sumArray(int A[], int N, int index) {
+    if (index >= N) {
+        return 0;
     }
-    return arr[n - 1] + findSum(arr, n - 1);
+    return A[index] + sumArray(A, N, index + 1);
 }
+
 int main() {
-    int n;
-    cin >> n; 
-    int arr[100]; 
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
+    int N;
+    cin >> N;
+    int A[N];
+    for (int i = 0; i < N; ++i) {
+        cin >> A[i];
     }
-    int total = findSum(arr, n);
-    double avg = (double)total / n;
-    cout << fixed << setprecision(6) << avg << "\n";
+    double sum = sumArray(A, N, 0);
+    double average = sum / N;
+    cout << fixed << setprecision(6) << average << "\n";
     return 0;
 }
