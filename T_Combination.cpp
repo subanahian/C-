@@ -9,6 +9,6 @@ int nCr(int n, int r) {
 int main() {
     int N, R;
     cin >> N >> R;
-    cout << nCr(N, R) << endl;
+    cout << nCr(N, R) << "\n";
     return 0;
 }
