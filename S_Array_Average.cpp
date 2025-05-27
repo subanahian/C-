@@ -17,7 +17,6 @@ int main() {
     }
     int total = findSum(arr, n);
     double avg = (double)total / n;
-    cout << fixed << setprecision(6) << avg << endl;
-
+    cout << fixed << setprecision(6) << avg << "\n";
     return 0;
 }
