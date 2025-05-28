@@ -24,6 +24,6 @@ int main() {
         cin >> weight[i] >> value[i];
     }
     int result = knapsack(0, W, n);
-    cout << result << endl;
+    cout << result << "\n";
     return 0;
 }
