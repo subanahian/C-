@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+bool canReach(long long current, long long target) {
+    if (current == target) return true;
+    if (current > target) return false;
+    return canReach(current * 10, target) || canReach(current * 20, target);
+}
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        long long N;
+        cin >> N;
+        if (canReach(1, N)) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+    return 0;
+}
