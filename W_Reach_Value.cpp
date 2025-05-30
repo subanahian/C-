@@ -13,9 +13,9 @@ int main() {
         long long N;
         cin >> N;
         if (canReach(1, N)) {
-            cout << "YES" << endl;
+            cout << "YES" << "\n";
         } else {
-            cout << "NO" << endl;
+            cout << "NO" << "\n";
         }
     }
     return 0;
