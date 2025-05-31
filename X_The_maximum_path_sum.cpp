@@ -19,7 +19,7 @@ int main() {
     for (int i = 0; i < N; i++)
         for (int j = 0; j < M; j++)
             cin >> A[i][j];
-    cout << maxPathSum(0, 0) << endl;
+    cout << maxPathSum(0, 0) << "\n";
 
     return 0;
 }
