@@ -16,13 +16,13 @@ int main() {
         } else if (s[j] == '?') {
             s[j] = s[i]; 
         } else if (s[i] != s[j]) {
-            cout << -1 << endl;
+            cout << -1 << "\n";
             return 0; 
         }
     }
     if (n % 2 == 1 && s[n / 2] == '?') {
         s[n / 2] = 'a';
     }
-    cout << s << endl;
+    cout << s << "\n";
     return 0;
 }
