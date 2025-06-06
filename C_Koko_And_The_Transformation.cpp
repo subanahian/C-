@@ -14,22 +14,27 @@ int main() {
         cin >> a[i];
         sumA += a[i];
     }
-    map<int, int> need; 
+
+    map<int, int> need;
     for (int i = 0; i < m; ++i) {
         cin >> b[i];
         sumB += b[i];
         need[b[i]]++;
     }
+
     if (sumA != sumB) {
         cout << "No\n";
         return 0;
     }
+
     priority_queue<int> pq;
     for (int i = 0; i < n; ++i)
-        pq.push(a[i]);
+        if (a[i] > 0) pq.push(a[i]);
+
     while (!pq.empty()) {
         int x = pq.top();
         pq.pop();
+
         if (need[x]) {
             need[x]--;
             if (need[x] == 0)
@@ -44,8 +49,7 @@ int main() {
         }
     }
 
-    if (need.empty()) cout << "Yes\n";
-    else cout << "No\n";
-
+    cout << (need.empty() ? "Yes\n" : "No\n");
     return 0;
 }
+
