@@ -9,6 +9,6 @@ int main() {
         b *= 2;
         years++;
     }
-    cout << years << endl;
+    cout << years << "\n";
     return 0;
 }
