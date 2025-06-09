@@ -27,6 +27,6 @@ int main() {
         }
         turn = !turn; 
     }
-    cout << sereja << " " << dima << endl;
+    cout << sereja << " " << dima << "\n";
     return 0;
 }
