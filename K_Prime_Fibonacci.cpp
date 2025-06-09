@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 bool isPrime(int num) {
     if (num < 2) return false;
     for (int i = 2; i * i <= num; ++i)
