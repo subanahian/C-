@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
             available_officers += event; 
         }
     }
-    cout << untreated_crimes << endl;
+    cout << untreated_crimes << "\n";
     return 0;
 }
 
