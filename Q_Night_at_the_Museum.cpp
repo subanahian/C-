@@ -12,11 +12,11 @@ int main() {
 
     for (char c : s) {
         int distance = abs(c - current);
-        int rotation = min(distance, 26 - distance); // choose the shorter path around the circle
+        int rotation = min(distance, 26 - distance); 
         totalRotations += rotation;
         current = c;
     }
 
-    cout << totalRotations << endl;
+    cout << totalRotations << "\n";
     return 0;
 }
