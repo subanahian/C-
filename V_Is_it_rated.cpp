@@ -4,7 +4,6 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-
     int a[n], b[n];
     bool changed = false;
     bool unordered = false;
@@ -15,7 +14,6 @@ int main() {
             changed = true; 
         }
     }
-
     if (changed) {
         cout << "rated" << "\n";
         return 0;
