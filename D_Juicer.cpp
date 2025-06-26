@@ -16,6 +16,6 @@ int main() {
             }
         }
     }
-    cout << emptyCount << endl;
+    cout << emptyCount << "\n";
     return 0;
 }
