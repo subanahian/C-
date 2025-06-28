@@ -19,6 +19,6 @@ int main() {
             result += keyboard[pos + 1];  
         }
     }
-    cout << result << endl;
+    cout << result << "\n";
     return 0;
 }
