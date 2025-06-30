@@ -20,8 +20,8 @@ int main() {
         }
     }
     if (min_time == INT_MAX)
-        cout << -1 << endl;
+        cout << -1 << "\n";
     else
-        cout << min_time << endl;
+        cout << min_time << "\n";
     return 0;
 }
