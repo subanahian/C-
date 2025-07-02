@@ -18,7 +18,7 @@ int main() {
         else
             mini = min(abs(x[i] - x[i - 1]), abs(x[i + 1] - x[i]));
         maxi = max(abs(x[i] - x[0]), abs(x[n - 1] - x[i]));
-        cout << mini << " " << maxi << endl;
+        cout << mini << " " << maxi << "\n";
     }
     return 0;
 }
