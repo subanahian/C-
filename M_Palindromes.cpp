@@ -25,9 +25,9 @@ int main() {
             }
         }
         if (allSame) {
-            cout << 0 << endl; 
+            cout << 0 << "\n"; 
         } else {
-            cout << s.size() - 1 << endl;
+            cout << s.size() - 1 << "\n";
         }
     }
     return 0;
