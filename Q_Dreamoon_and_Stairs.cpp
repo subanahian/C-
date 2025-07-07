@@ -7,10 +7,10 @@ int main() {
     int min_moves = (n + 1) / 2;
     for (int i = min_moves; i <= n; ++i) {
         if (i % m == 0) {
-            cout << i << endl;
+            cout << i << "\n";
             return 0;
         }
     }
-    cout << -1 << endl;
+    cout << -1 << "\n";
     return 0;
 }
