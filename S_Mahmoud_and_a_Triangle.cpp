@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -15,11 +13,11 @@ int main() {
 
     for (int i = 0; i < n - 2; ++i) {
         if (a[i] + a[i+1] > a[i+2]) {
-            cout << "YES" << endl;
+            cout << "YES" << "\n";
             return 0;
         }
     }
 
-    cout << "NO" << endl;
+    cout << "NO" << "\n";
     return 0;
 }
