@@ -1,6 +1,4 @@
-#include <iostream>
-#include <sstream>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 long long gcd(long long a, long long b) {
     while (b != 0) {
@@ -24,6 +22,6 @@ int main() {
     long long g = gcd(num, den);
     num /= g;
     den /= g;
-    cout << num << "/" << den << endl;
+    cout << num << "/" << den << "\n";
     return 0;
 }
