@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 int minMovesToEqual(string s, string t) {
@@ -16,6 +15,6 @@ int minMovesToEqual(string s, string t) {
 int main() {
     string s, t;
     cin >> s >> t;
-    cout << minMovesToEqual(s, t) << endl;
+    cout << minMovesToEqual(s, t) << "\n";
     return 0;
 }
