@@ -10,8 +10,8 @@ int main() {
     long long sum_a = accumulate(a.begin(), a.end(), 0LL);
     long long sum_b = accumulate(b.begin(), b.end(), 0LL);
     if (sum_a == sum_b)
-        cout << "Yes" << endl;
+        cout << "Yes" << "\n";
     else
-        cout << "No" << endl;
+        cout << "No" << "\n";
     return 0;
 }
