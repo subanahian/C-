@@ -21,15 +21,16 @@ int main() {
             if (idx1 == -1) idx1 = i;
             else if (idx2 == -1) idx2 = i;
             else {
-                cout << "NO" << endl;
+                cout << "NO" << "\n";
                 return 0;
             }
         }
     }
     if (diffCount == 2 && A[idx1] == B[idx2] && A[idx2] == B[idx1]) {
-        cout << "YES" << endl;
+        cout << "YES" << "\n"
+        ;
     } else {
-        cout << "NO" << endl;
+        cout << "NO" << "\n";
     }
     return 0;
 }
