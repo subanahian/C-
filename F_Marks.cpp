@@ -30,6 +30,6 @@ int main() {
             ++count;
         }
     }
-    cout << count << endl;
+    cout << count << "\n";
     return 0;
 }
