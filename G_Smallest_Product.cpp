@@ -14,6 +14,6 @@ int main() {
     }
     double avg_log = log_product / n;
     long long x = (long long)floor(exp(avg_log)) + 1;
-    cout << x << endl;
+    cout << x << "\n";
     return 0;
 }
