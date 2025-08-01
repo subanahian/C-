@@ -12,6 +12,6 @@ int main() {
     total += t1;
     long long t2 = min(n / 2, k);
     total += t2;
-    cout << total << endl;
+    cout << total << "\n";
     return 0;
 }
