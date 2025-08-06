@@ -2,10 +2,10 @@
 using namespace std;
 
 int main(){
-    int n,m,a;
+    long long n,m,a;
     cin>>n>>m>>a;
-    int  row = (n + a - 1) / a; 
-    int  col = (m + a - 1) / a;
-    int total = row * col;
+    long long  row = (n + a - 1) / a; 
+    long long  col = (m + a - 1) / a;
+    long long total = row * col;
     cout << total << "\n";
 }
