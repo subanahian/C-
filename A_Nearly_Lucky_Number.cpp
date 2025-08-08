@@ -1,31 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    long long n, luckyDigits = 0;
+
+bool luckyNum(long long x) {
+    if (x == 0) return false;
+    while (x) {
+        int d = x % 10;
+        if (d != 4 && d != 7) return false;
+        x /= 10;
+    }
+    return true;
+}
+
+int main() {
+    long long n;
     cin >> n;
-    while (n){
-        if (n % 10 == 4 || n % 10 == 7) {
-            luckyDigits++;
-        }
+    int cnt = 0;
+    while (n) {
+        int d = n % 10;
+        if (d == 4 || d == 7) cnt++;
         n /= 10;
     }
-    int isLucky = 1;
-    if (luckyDigits == 0){
-        isLucky = 0;
-    }
-    while (luckyDigits) {
-        if (luckyDigits % 10 != 4 && luckyDigits % 10 != 7){
-            isLucky = 0;
-            break;
-        }
-        luckyDigits /= 10;
-    }
-    if (isLucky == 1) {
-        cout << "YES\n";
-    }
-    else
-    {
-        cout << "NO\n";
-    }
-    return 0;
+    cout << (luckyNum(cnt) ? "YES" : "NO");
 }
+
