@@ -5,7 +5,11 @@ int main (){
     long long n ,k ;
     cin>>n >> k;
     long long x= n/2;
-    
-
-
+    if (k <= x ){
+        cout << 2*k-1 << "\n";
+    }
+    else{
+        cout << k-1 <<"\n";
+    }
+return 0;
 }
