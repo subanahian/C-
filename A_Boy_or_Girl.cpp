@@ -18,5 +18,6 @@ int main (){
         cout << "CHAT WITH HER!" << "\n";
     else
         cout << "IGNORE HIM!" << "\n";
+        return 0;
 
 }
