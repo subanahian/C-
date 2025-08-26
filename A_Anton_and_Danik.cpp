@@ -6,14 +6,15 @@ int main(){
     int n;
     string s;
     cin >> n >> s;
-
-    map<char,int> mp;
-    for(int i=0; i<n; i++){
-        mp[s[i]]++;
+        int anton = 0;
+        int  danik = 0;
+      for (int i = 0; i < n; i++) {
+        if (s[i] == 'A') {
+            anton++;
+        } else if (s[i] == 'D') {
+            danik++;
+        }
     }
-    int anton = mp ['A'] ;
-    int danik = mp ['D'];
-
     if (anton > danik){
          cout << "Anton\n";
          }
