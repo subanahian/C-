@@ -9,13 +9,13 @@ int main (){
     set<char>a;
     for (int i = 0; i < n; i++) {
     char c = s[i];
-    a.insert(c);
-    
-    if (c >= 'A' && c <= 'Z') {
+    a.insert(tolower(c));
+    }
+    if (a.size() == 26) {
    cout << "YES"<< "\n";
     }
      else {
       cout << "NO"<< "\n";
     }
-}
+
 }
