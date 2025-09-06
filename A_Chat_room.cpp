@@ -4,12 +4,12 @@ using namespace std;
 int main(){
     string s;
     cin >> s;
-    string w =  "hello";
+    string w = "hello";
     int j ;
     for(int i = 0; i < s; i++){
         j++;
     }
-    if(j==w.size()){
+    if(j == w){
         cout<< "Yes" << "\n";
     }
     else{
