@@ -1,18 +1,32 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
-int main(){
-    string s;
-    cin >> s;
-    string w = "hello";
-    int j ;
-    for(int i = 0; i < s; i++){
-        j++;
+int main()
+{
+    string str;
+
+    cin >> str;
+
+    string h = "hello";
+
+    int index = 0;
+
+    bool possible = false;
+
+    for (int i = 0; i < str.size(); i++)
+    {
+        if (str[i] == h[index])
+        {
+            index++;
+            if (index == 5)
+            {
+                possible = true;
+            }
+        }
     }
-    if(j == w){
-        cout<< "Yes" << "\n";
-    }
-    else{
-        cout<< "No" << "\n";
-    }
+
+    cout << (possible ? "YES\n" : "NO\n");
+
+    return 0;
 }
