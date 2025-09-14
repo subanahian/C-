@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -15,6 +15,6 @@ int main() {
             capacity = current; 
         }
     }
-    cout << capacity << endl;
+    cout << capacity << "\n";
     return 0;
 }
