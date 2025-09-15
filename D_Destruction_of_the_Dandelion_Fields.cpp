@@ -38,22 +38,30 @@ int main()
         }
         else
         {
-            for (int i = 0; i < evenVec.size(); i++)
+            for (long long int i = 0; i < evenVec.size(); i++)
             {
                 ans += evenVec[i];
             }
 
             sort(oddVec.rbegin(), oddVec.rend());
 
-            bool take = false;
+            int left = 0, right = oddVec.size() - 1;
 
-            for (int i = 0; i < oddVec.size(); i++)
+            bool take = true;
+
+            while (left <= right)
             {
-                take = !take;
                 if (take)
                 {
-                    ans += oddVec[i];
+                    ans += oddVec[left];
+                    left++;
                 }
+                else
+                {
+                    right--;
+                }
+
+                take = !take;
             }
         }
 
