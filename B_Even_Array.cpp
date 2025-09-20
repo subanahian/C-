@@ -12,8 +12,8 @@ int main(){
 			if(a[i]%2 != i%2) cnt[i%2]++;
 		}
  
-		if(cnt[0] != cnt[1]) cout<<-1<<endl;
-		else cout<<cnt[0]<<endl;		
+		if(cnt[0] != cnt[1]) cout<<-1<<"\n";
+		else cout<<cnt[0]<<"\n";		
 	}
- 
+ return 0;
 }
