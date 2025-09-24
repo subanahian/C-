@@ -15,7 +15,7 @@ int main() {
         vector<int> a(n);
         for (int i = 0; i < n; i++) cin >> a[i];
         if (is_sorted(a)) {
-            cout << 0 << endl;
+            cout << 0 << "\n";
             continue;
         }
         int iterations = 0;
@@ -31,7 +31,7 @@ int main() {
                 }
             }
         }
-        cout << iterations << endl;
+        cout << iterations << "\n";
     }
     return 0;
 }
