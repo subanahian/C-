@@ -39,7 +39,7 @@ int main() {
                 s[i] = '6';
             }
         }
-        cout << ans ;
+        cout << ans << "\n" ;
     }
     return 0;
 }
