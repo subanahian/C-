@@ -10,6 +10,7 @@ bool divisibleBy11(string s) {
     }
     return abs(oddSum - evenSum) % 11 == 0;
 }
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -41,5 +42,6 @@ int main() {
         }
         cout << ans << "\n" ;
     }
+    
     return 0;
 }
