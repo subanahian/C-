@@ -8,7 +8,7 @@ int main() {
     for (int i = 1; i <= 10; i++) {
         int cost = i * k;
         if (cost % 10 == 0 || cost % 10 == r) {
-            cout << i << endl;
+            cout << i << "\n";
             return 0;
         }
     }
