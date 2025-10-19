@@ -15,11 +15,10 @@ int main() {
             }
         }
     }
-
     if (isColor)
-        cout << "#Color" << endl;
+        cout << "#Color" << "\n";
     else
-        cout << "#Black&White" << endl;
+        cout << "#Black&White" << "\n";
 
     return 0;
 }
