@@ -18,7 +18,7 @@ int main() {
     if (isColor)
         cout << "#Color" << "\n";
     else
-        cout << "#Black&White" ;
+        cout << "#Black&White"<< "\n";
 
     return 0;
 }
